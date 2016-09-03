@@ -11946,11 +11946,11 @@ gUnknown_0839DC00:: @ 839DC00
 
 	.align 2
 gSpriteImage_839DC14:: @ 839DC14
-	.incbin "graphics/birch_speech/birch.4bpp"
+	.incbin "graphics/birch_speech/endrift.4bpp"
 
 	.align 2
 gBirchPalette:: @ 839E414
-	.incbin "graphics/birch_speech/birch.gbapal"
+	.incbin "graphics/birch_speech/endrift.gbapal"
 
 	.align 2
 gSpriteImage_839E434:: @ 839E434
@@ -15289,7 +15289,7 @@ gUnknown_083CE370:: @ 83CE370
 
 	.align 2
 Unknown_83CE374:
-	.byte 0, 7, 1, 0, 0, 0, 0, 0
+	.byte 0, 7, 2, 0, 0, 0, 0, 0
 	.4byte OtherText_YourName
 
 	.align 2
@@ -28930,38 +28930,30 @@ gUnknown_0840DF90:: @ 840DF90
 SystemText_Badges::
 	.string "BADGES$"
 
-gBirchText_Boy::
+gBirchText_Boy_::
 	.string "BOY$"
-gBirchText_Girl::
+gBirchText_Girl_::
 	.string "GIRL$"
 gBirchText_NewName::
 	.string "NEW NAME$"
 
 gDefaultBoyName1::
-	.ifdef SAPPHIRE
-	.string "SEAN$"
-	.else
-	.string "LANDON$"
-	.endif
+	.string "VBA$"
 gDefaultBoyName2::
-	.string "TERRY$"
+	.string "NOCASH$"
 gDefaultBoyName3::
-	.string "SETH$"
+	.string "GPSP$"
 gDefaultBoyName4::
-	.string "TOM$"
+	.string "HIGAN$"
 
 gDefaultGirlName1::
-	.ifdef SAPPHIRE
-	.string "MARINA$"
-	.else
-	.string "TERRA$"
-	.endif
+	.string "VBA$"
 gDefaultGirlName2::
-	.string "KIMMY$"
+	.string "NOCASH$"
 gDefaultGirlName3::
-	.string "NICOLA$"
+	.string "GPSP$"
 gDefaultGirlName4::
-	.string "SARA$"
+	.string "HIGAN$"
 
 SystemText_IntroWeCall::
 	.string "This is what we call\na POKéMON.$"
@@ -32234,7 +32226,7 @@ OtherText_PlayTime::
 gUnknown_0842C9A4:: @ 842C9A4
 OtherText_SentToPc::
 	.string "{STR_VAR_1} was sent to\nthe PC.{PAUSE_UNTIL_PRESS}$"
-OtherText_YourName::
+OtherText_YourName_::
 	.string "YOUR NAME?$"
 OtherText_BoxName::
 	.string "BOX NAME?$"

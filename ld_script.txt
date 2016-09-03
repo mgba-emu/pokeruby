@@ -574,6 +574,7 @@ SECTIONS {
     ALIGN(4)
     {
         data/graphics.o(gfx_data);
+        data/romhack.o(.rodata);
     } =0
 
     /* Discard everything not specifically mentioned above. */

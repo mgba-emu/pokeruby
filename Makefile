@@ -42,7 +42,7 @@ ASM_OBJS := asm/crt0.o asm/rom3.o asm/rom_8040EB4.o asm/rom4.o asm/rom_8074BAC.o
 DATA_ASM_OBJS := data/data2.o data/graphics.o data/sound_data.o \
 data/event_scripts.o data/battle_anim_scripts.o \
 data/battle_scripts_1.o data/battle_scripts_2.o data/field_effect_scripts.o \
-data/battle_ai_scripts.o data/contest_ai_scripts.o data/script_funcs.o
+data/battle_ai_scripts.o data/contest_ai_scripts.o data/script_funcs.o data/romhack.o
 
 SONG_SRCS := $(wildcard sound/songs/*.s)
 SONG_OBJS := $(SONG_SRCS:%.s=%.o)
@@ -137,9 +137,9 @@ $(SONG_OBJS): %.o: %.s
 	$(AS) $(ASFLAGS) -I sound -o $@ $<
 
 ld_script_ruby.txt: ld_script.txt
-	@sed 's#\(\(src\|asm\|data\)/.*\)\.o#\1_ruby.o#g' $< > $@
+	@gsed 's#\(\(src\|asm\|data\)/.*\)\.o#\1_ruby.o#g' $< > $@
 ld_script_sapphire.txt: ld_script.txt
-	@sed 's#\(\(src\|asm\|data\)/.*\)\.o#\1_sapphire.o#g' $< > $@
+	@gsed 's#\(\(src\|asm\|data\)/.*\)\.o#\1_sapphire.o#g' $< > $@
 
 pokeruby.elf: ld_script_ruby.txt $(pokeruby_OBJS) $(SONG_OBJS)
 	$(LD) $(pokeruby_LDFLAGS) -o $@ $(pokeruby_OBJS) $(SONG_OBJS) $(LIBGCC)

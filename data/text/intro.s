@@ -1,17 +1,17 @@
-gUnknown_081C6D78:: @ 81C6D78
-UnknownString_81C6D78: @ 81C6D78
+gUnknown_081C6D78_:: @ 81C6D78
+UnknownString_81C6D78_: @ 81C6D78
 	.string "Hi! Sorry to keep you waiting!\p"
 	.string "Welcome to the world of POKéMON!\p"
 	.string "My name is BIRCH.\p"
 	.string "But everyone calls me the POKéMON\n"
 	.string "PROFESSOR.\p$"
 
-gUnknown_081C6DF8:: @ 81C6DF8
-UnknownString_81C6DF8: @ 81C6DF8
+gUnknown_081C6DF8_:: @ 81C6DF8
+UnknownString_81C6DF8_: @ 81C6DF8
 	.string "This is what we call a “POKéMON.”$"
 
-gUnknown_081C6E1A:: @ 81C6E1A
-UnknownString_81C6E1A: @ 81C6E1A
+gUnknown_081C6E1A_:: @ 81C6E1A
+UnknownString_81C6E1A_: @ 81C6E1A
 	.string "This world is widely inhabited by\n"
 	.string "creatures known as POKéMON.\p"
 	.string "We humans live alongside POKéMON,\n"
@@ -27,17 +27,17 @@ UnknownString_81C6E1A: @ 81C6E1A
 	.string "I’ve been undertaking research.\l"
 	.string "That’s what I do.\p$"
 
-gUnknown_081C6FCB:: @ 81C6FCB
-UnknownString_81C6FCB: @ 81C6FCB
+gUnknown_081C6FCB_:: @ 81C6FCB
+UnknownString_81C6FCB_: @ 81C6FCB
 	.string "And you are?$"
 
-gUnknown_081C6FD8:: @ 81C6FD8
-UnknownString_81C6FD8: @ 81C6FD8
+gUnknown_081C6FD8_:: @ 81C6FD8
+UnknownString_81C6FD8_: @ 81C6FD8
 	.string "Are you a boy?\n"
 	.string "Or are you a girl?$"
 
-gUnknown_081C6FFA:: @ 81C6FFA
-UnknownString_81C6FFA: @ 81C6FFA
+gUnknown_081C6FFA_:: @ 81C6FFA
+UnknownString_81C6FFA_: @ 81C6FFA
 	.string "All right.\n"
 	.string "What’s your name?$"
 
@@ -45,15 +45,15 @@ gUnknown_081C7017:: @ 81C7017
 UnknownString_81C7017: @ 81C7017
 	.string "So it’s {PLAYER}{KUN}?$"
 
-gUnknown_081C7025:: @ 81C7025
-UnknownString_81C7025: @ 81C7025
+gUnknown_081C7025_:: @ 81C7025
+UnknownString_81C7025_: @ 81C7025
 	.string "Ah, okay!\p"
 	.string "You’re {PLAYER}{KUN} who’s moving to my\n"
 	.string "hometown of LITTLEROOT.\l"
 	.string "I get it now!$"
 
-gUnknown_081C7074:: @ 81C7074
-UnknownString_81C7074: @ 81C7074
+gUnknown_081C7074_:: @ 81C7074
+UnknownString_81C7074_: @ 81C7074
 	.string "All right, are you ready?\p"
 	.string "Your very own adventure is about\n"
 	.string "to unfold.\p"

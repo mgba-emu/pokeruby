@@ -1,6 +1,6 @@
-CXX = g++
+CXX = g++6
 
-CXXFLAGS = -Wall -std=c++11 -O2
+CXXFLAGS := -O2 -Wall -Wno-switch -Wl,-rpath=/usr/local/lib/gcc6
 
 SRCS = scaninc.cpp
 

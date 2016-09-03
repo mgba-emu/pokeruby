@@ -1,6 +1,6 @@
 #!/bin/sh
-make -C tools/gbagfx
-make -C tools/scaninc
-make -C tools/preproc
-make -C tools/bin2c
-make -C tools/rsfont
+gmake -C tools/gbagfx
+gmake -C tools/scaninc
+gmake -C tools/preproc
+gmake -C tools/bin2c
+gmake -C tools/rsfont

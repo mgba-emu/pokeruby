@@ -1517,7 +1517,7 @@ _0800A304:
 	adds r1, r0
 	lsls r1, 2
 	adds r1, r2
-	movs r0, 0x88
+	movs r0, 0x80
 	strh r0, [r1, 0x20]
 	movs r0, 0x3C
 	strh r0, [r1, 0x22]
@@ -1693,9 +1693,9 @@ task_new_game_prof_birch_speech_6: @ 800A444
 	lsls r2, 2
 	adds r2, r1
 	movs r5, 0
-	movs r1, 0x68
+	movs r1, 0x62
 	strh r1, [r2, 0x20]
-	movs r1, 0x48
+	movs r1, 0x4C
 	strh r1, [r2, 0x22]
 	movs r1, 0x3E
 	adds r1, r2
@@ -1716,7 +1716,7 @@ task_new_game_prof_birch_speech_6: @ 800A444
 	ldr r2, _0800A4B0
 	str r2, [sp, 0xC]
 	movs r2, 0x70
-	movs r3, 0x3A
+	movs r3, 0x36
 	bl AddTextPrinterForMessage
 	ldr r0, _0800A4B4
 	str r0, [r4]
@@ -1772,8 +1772,8 @@ _0800A4E4:
 	asrs r0, 16
 	cmp r0, 0x20
 	bne _0800A510
-	movs r0, 0xAF
-	lsls r0, 1
+	movs r0, 0xE9
+	nop
 	movs r1, 0
 	bl cry_related
 _0800A510:
@@ -2763,9 +2763,9 @@ task_new_game_prof_birch_speech_part2_6: @ 800AC58
 	adds r1, r0
 	lsls r1, 2
 	adds r1, r5
-	movs r0, 0x88
+	movs r0, 0x80
 	strh r0, [r1, 0x20]
-	movs r0, 0x40
+	movs r0, 0x3C
 	strh r0, [r1, 0x22]
 	adds r3, r1, 0
 	adds r3, 0x3E
@@ -2788,9 +2788,9 @@ task_new_game_prof_birch_speech_part2_6: @ 800AC58
 	adds r0, r1
 	lsls r0, 2
 	adds r0, r5
-	movs r1, 0x68
+	movs r1, 0x62
 	strh r1, [r0, 0x20]
-	movs r1, 0x48
+	movs r1, 0x4C
 	strh r1, [r0, 0x22]
 	adds r3, r0, 0
 	adds r3, 0x3E
@@ -3496,10 +3496,10 @@ sub_800B25C: @ 800B25C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0800B2B8: .4byte gMonFrontPicTable + 0xAF0
+_0800B2B8: .4byte gbaGfxPtr
 _0800B2BC: .4byte gMonFrontPicCoords
 _0800B2C0: .4byte gUnknown_081FAF4C
-_0800B2C4: .4byte gMonPaletteTable + 0xAF0
+_0800B2C4: .4byte gbaPalPtr
 _0800B2C8: .4byte 0x02024e8c
 	thumb_func_end sub_800B25C
 
@@ -3514,7 +3514,7 @@ AddBirchSpeechObjects: @ 800B2CC
 	adds r4, r0, 0
 	lsls r4, 24
 	lsrs r4, 24
-	movs r0, 0x88
+	movs r0, 0x80
 	movs r1, 0x3C
 	movs r2, 0x1
 	bl AddNewGameBirchObject
